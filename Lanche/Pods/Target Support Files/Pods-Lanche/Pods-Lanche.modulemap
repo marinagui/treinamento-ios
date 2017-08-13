@@ -1,0 +1,6 @@
+framework module Pods_Lanche {
+  umbrella header "Pods-Lanche-umbrella.h"
+
+  export *
+  module * { export * }
+}
