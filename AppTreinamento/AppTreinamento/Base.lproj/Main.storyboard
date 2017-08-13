@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AppTreinamento" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7sA-2Q-BFr">
+                                <rect key="frame" x="0.0" y="214" width="375" height="453"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4cC-JS-2f9">
+                                <rect key="frame" x="16" y="50" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="R0T-uy-noY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ov7-8W-6WP">
+                                <rect key="frame" x="231" y="50" width="134" height="30"/>
+                                <accessibility key="accessibilityConfiguration" label="Adicionar"/>
+                                <state key="normal" title="Adicionar"/>
+                                <connections>
+                                    <action selector="touchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7QJ-Uf-Mbe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7sA-2Q-BFr" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="152-Bx-C23"/>
+                            <constraint firstItem="4cC-JS-2f9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="5T6-Dy-lsr"/>
+                            <constraint firstItem="Ov7-8W-6WP" firstAttribute="leading" secondItem="4cC-JS-2f9" secondAttribute="trailing" constant="15" id="Att-CY-OZq"/>
+                            <constraint firstItem="Ov7-8W-6WP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="GUo-Ew-qnY"/>
+                            <constraint firstItem="7sA-2Q-BFr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qvg-YT-Kso"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ov7-8W-6WP" secondAttribute="trailing" constant="10" id="bsT-32-6ts"/>
+                            <constraint firstItem="7sA-2Q-BFr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ckc-Ce-kyb"/>
+                            <constraint firstItem="4cC-JS-2f9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="gTh-4F-t9A"/>
+                            <constraint firstItem="7sA-2Q-BFr" firstAttribute="top" secondItem="Ov7-8W-6WP" secondAttribute="bottom" constant="134" id="kGp-6U-KGw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnAddItem" destination="Ov7-8W-6WP" id="pPe-NP-S3o"/>
+                        <outlet property="tableView" destination="7sA-2Q-BFr" id="0vP-ts-ZYb"/>
+                        <outlet property="txtItem" destination="4cC-JS-2f9" id="J0N-nQ-c2l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>
